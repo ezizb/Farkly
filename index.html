@@ -4,6 +4,10 @@
     <title>FARKLY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -19,13 +23,24 @@
               <nav class="header__menu">
                 <ul class="header__menu-list">
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-link">Главная</a>
+                    <a href="#" data-goto=".header" class="header__menu-link"
+                      >Главная
+                    </a>
                   </li>
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-link">О нас</a>
+                    <a href="#" data-goto=".slider" class="header__menu-link"
+                      >О нас
+                    </a>
                   </li>
                   <li class="header__menu-item">
-                    <a href="" class="header__menu-link">Контакты</a>
+                    <a href="#" data-goto=".footer" class="header__menu-link"
+                      >Наши работы
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#" data-goto=".bottom" class="header__menu-link"
+                      >Контакты
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -39,7 +54,9 @@
                 компания специализирующаяся на 3D печати разнообразных товаров
                 для вашего дома, стильных аксессуаров и уникальных игрушек.
               </div>
-              <a href="" class="header__button">Подробнее</a>
+              <a href="#" data-goto=".slider" class="header__button"
+                >Подробнее
+              </a>
             </div>
           </div>
         </div>
@@ -72,14 +89,118 @@
             </div>
           </div>
         </section>
+        <section class="slider">
+          <div class="slider__container container">
+            <h2 class="slider__title">Наши работы</h2>
+            <div class="slider__body swiper-wrapper">
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image">
+                  <img src="/Farkly/img/swiper/01.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/02.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/03.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/04.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/05.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/06.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/07.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/08.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/09.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/10.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/11.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/12.jpeg" alt="Картинка" />
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__image swiper-image">
+                  <img src="/Farkly/img/swiper/13.jpeg" alt="Картинка" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__top"></div>
-          <div class="footer__bottom"></div>
+        <div class="footer__container container">
+          <div class="footer__top">
+            <div class="footer__top-contact">
+              <div class="footer__top-tel">
+                Телефон
+                <a href="tel:79935959056">+7 (993) 595-90-56</a>
+              </div>
+              <div class="footer__top-email">
+                Почта
+                <a href="mailto:cubework1203@gmail.com"
+                  >cubework1203@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="footer__top-social">
+              <a href="https://t.me/FARKLYLIVE">
+                <img src="/Farkly/img/footer/tg.svg" alt="" />
+              </a>
+              <a href="https://vk.com/farkly">
+                <img src="/Farkly/img/footer/vk.svg" alt="" />
+              </a>
+              <a
+                href="https://youtube.com/@Interestingfacts_rus?si=sFuG_DHCcs0eEdR_"
+              >
+                <img src="/Farkly/img/footer/youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-text">
+              2024 Farkly. Все права защищены.
+            </div>
+          </div>
         </div>
       </footer>
+      <div class="bottom"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
