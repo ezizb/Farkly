@@ -9,9 +9,12 @@ if (iconBurger) {
   });
 }
 
-/*
+/*------------------------------------------------------------------------------------------------------------------*/
+
 // Прокрутка при клике
-const menuLinks = document.querySelectorAll(".header__menu-link[data-goto]");
+const menuLinks = document.querySelectorAll(
+  ".header__menu-link[data-goto], .header__button[data-goto]"
+);
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
     menuLink.addEventListener("click", onMenuLinkClick);
@@ -43,4 +46,52 @@ if (menuLinks.length > 0) {
     }
   }
 }
-*/
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+//Инициализация Swiper
+new Swiper(".slider__container", {
+  spaceBetween: 40,
+
+  autoHeight: true,
+
+  slidesPerView: 5,
+
+  loop: true,
+
+  autoplay: {
+    delay: 1000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
+
+  speed: 1000,
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+    },
+
+    992: {
+      slidesPerView: 4,
+    },
+
+    767: {
+      slidesPerView: 3,
+    },
+
+    480: {
+      slidesPerView: 2,
+    },
+
+    320: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+const images = document.querySelectorAll(".slider__image img");
+images.forEach(function (image) {
+  image.setAttribute("width", "210"); // Установите нужную ширину
+  image.setAttribute("height", "230"); // Установите нужную высоту
+});
